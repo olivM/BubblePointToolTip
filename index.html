@@ -6,15 +6,18 @@
 	
 	<title>Bubble Point Tooltips with CSS3, HTML5, & jQuery</title>
 	
-	<link rel='stylesheet' href='css/style.css'>
-	<link rel='stylesheet' href='css/tooltips.css'>
+	<link rel='stylesheet' href='style.css'>
+	<link rel='stylesheet' href='tooltips.css'>
 	
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
 	<!--[if !IE | (gt IE 8)]><!-->
-	<script src="js/tooltips.js"></script>
+	<script src="tooltips.js"></script>
 	<script>
 		$(function() {
-			$("#page-wrap a[title]").tooltips();
+			// List of elements with tooltips enabled(if multiple tags are desired choose all to prevent duplicate tooltips attribute issues)
+			$("#page-wrap *[title]").tooltips();
+			//$("#page-wrap a[title]").tooltips();
+			//$("#page-wrap img[title]").tooltips();
 		});
 	</script>
 	<!--<![endif]-->
